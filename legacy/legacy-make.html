@@ -1,0 +1,104 @@
+{% extends "item_builder/base.html" %}
+{% load static %}
+
+{% block content %}
+	<title>Pred Builder - Loadout Builder</title>
+	<link rel="stylesheet" href="{% static 'styles/make.css' %}">
+	<div class="hero-select-container select">
+		<h1>SELECT A HERO</h1>
+		<h3>the hero this build is designed for</h3>
+		{% for hero in heroes %}
+		{% with "styles/images/heroes/"|add:hero.img_src as hero_src %}
+		<img class="hero-portrait" src="{% static hero_src %}" onclick="addHero('{{ hero.name }}')" onmouseover='showHover(event, "{{hero.name}}", "{{hero.desc}}", "{{hero.Q}}", "{{hero.E}}", "{{hero.R}}", "{{hero.RMB}}", "{{hero.passive}}")' onmouseout="destroyHover()" onmousemove="moveHover(event)">
+		{% endwith %}
+		{% endfor %}
+	</div>
+	<div class="role-select-container select">
+		<h1>SELECT A ROLE</h1>
+		<h3>the lane this build should be played</h3>
+		<img class="role-icon" src="{% static 'styles/images/roles/solo.png' %}" onmouseover='showHover(event, "Solo")' onmouseout="destroyHover()" onmousemove="moveHover(event)" onclick="addRole('solo')">
+		<img class="role-icon" src="{% static 'styles/images/roles/jungle.png' %}" onmouseover='showHover(event, "Jungle")' onmouseout="destroyHover()" onmousemove="moveHover(event)" onclick="addRole('jungle')">
+		<img class="role-icon" src="{% static 'styles/images/roles/mid.png' %}" onmouseover='showHover(event, "Mid")' onmouseout="destroyHover()" onmousemove="moveHover(event)" onclick="addRole('mid')">
+		<img class="role-icon" src="{% static 'styles/images/roles/support.png' %}" onmouseover='showHover(event, "Support")' onmouseout="destroyHover()" onmousemove="moveHover(event)" onclick="addRole('support')">
+		<img class="role-icon" src="{% static 'styles/images/roles/carry.png' %}" onmouseover='showHover(event, "Carry")' onmouseout="destroyHover()" onmousemove="moveHover(event)" onclick="addRole('carry')">
+	</div>
+	<div class="item-select-container select">
+		<h1>SELECT STARTER ITEMS</h1>
+		<h3>the items that players should buy when the match starts (up to 3)</h3>
+		<div class="item-filter">
+			<div class="filter-btn crest" onclick="filterCrest()">Crests</div>
+			<div class="filter-btn p_power" onclick="filterStat('p_power')">Physical Power</div>
+			<div class="filter-btn m_power" onclick="filterStat('m_power')">Magical Power</div>
+			<div class="filter-btn p_armor" onclick="filterStat('p_armor')">Physical Armor</div>
+			<div class="filter-btn m_armor" onclick="filterStat('m_armor')">Magical Armor</div>
+			<div class="filter-btn p_pen" onclick="filterStat('p_pen')">Physical Pen.</div>
+			<div class="filter-btn m_pen" onclick="filterStat('m_pen')">Magical Pen.</div>
+			<div class="filter-btn c_chance" onclick="filterStat('c_chance')">Critical Chance</div>
+			<div class="filter-btn atk_speed" onclick="filterStat('atk_speed')">Attack Speed</div>
+			<div class="filter-btn health" onclick="filterStat('health')">Max Health</div>
+			<div class="filter-btn mana" onclick="filterStat('mana')">Max Mana</div>
+			<div class="filter-btn h_regen" onclick="filterStat('h_regen')">Health Regen</div>
+			<div class="filter-btn m_regen" onclick="filterStat('m_regen')">Mana Regen</div>
+			<div class="filter-btn lifesteal" onclick="filterStat('lifesteal')">Lifesteal</div>
+			<div class="filter-btn haste" onclick="filterStat('haste')">Ability Haste</div>
+			<div class="reset-btn" onclick="resetFilter()">RESET</div>
+		</div>
+		<div class="selected-items">
+			<div class="counter">0/3</div>
+		</div>
+	</div>
+	<div class="meta-container select">
+		<h1>NAME YOUR BUILD</h1>
+		<h3>name and describe your build</h3>
+		<input class="meta title" type="text" placeholder="Your build name here" maxlength="25" onkeypress="markMetaIndicator();">
+		<textarea class="meta desc" cols="50" rows="5" placeholder="Your build description here" maxlength="250" onkeypress="markMetaIndicator();"></textarea>
+	</div>
+	<div class="indicator">
+		<div class="ind hero-n">
+			<span>hero</span>
+			<svg width="100" height="50">
+			  <circle cx="50" cy="25" r="10" stroke="rgba(255, 255, 255, 0.3)" stroke-width="2" fill="rgba(255, 255, 255, 0.3)" />
+			</svg>
+			<br>
+			<svg width="100" height="50">
+			  <line x1="50" y1="0" x2="50" y2="50" style="stroke:rgba(255, 255, 255, 0.3);stroke-width:3" />
+			</svg>
+		</div>
+		<div class="ind role-n">
+			<span>role</span>
+			<svg width="100" height="50">
+			  <circle cx="50" cy="25" r="10" stroke="rgba(255, 255, 255, 0.3)" stroke-width="2" fill="rgba(255, 255, 255, 0.3)" />
+			</svg>
+			<br>
+			<svg width="100" height="50">
+			  <line x1="50" y1="0" x2="50" y2="50" style="stroke:rgba(255, 255, 255, 0.3);stroke-width:3" />
+			</svg>
+		</div>
+		<div class="ind item-n">
+			<span>items</span>
+			<svg width="100" height="50">
+			  <circle cx="50" cy="25" r="10" stroke="rgba(255, 255, 255, 0.3)" stroke-width="2" fill="rgba(255, 255, 255, 0.3)" />
+			</svg>
+			<br>
+			<svg width="100" height="50">
+			  <line x1="50" y1="0" x2="50" y2="50" style="stroke:rgba(255, 255, 255, 0.3);stroke-width:3" />
+			</svg>
+		</div>
+		<div class="ind meta-n" onclick="changeMeta();">
+			<span>title</span>
+			<svg width="100" height="50">
+			  <circle cx="50" cy="25" r="10" stroke="rgba(255, 255, 255, 0.3)" stroke-width="2" fill="rgba(255, 255, 255, 0.3)" />
+			</svg>
+		</div>
+
+		<button class="publish-button">Publish Build</button>
+	</div>
+	<div class="transition"></div>
+	<img class="background-image" src="{% static 'styles/images/background2-styled.jpg' %}">
+  <script>
+		window.onbeforeunload = function(e) {
+	    return 'Dialog text here.';
+		};
+</script>
+<script src="{% static 'scripts/make.js' %}"></script>
+{% endblock content %}

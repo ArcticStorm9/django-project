@@ -1,0 +1,1202 @@
+[
+    {
+        "name": "Witchstalker",
+        "cost": 350,
+        "active": "Cleanse all CC and Negative Debuffs. Your next basic attack or damaging ability within 8 seconds will deal 8% (+5% per effect removed) of the targets maximum health as bonus true damage and heal you equal to the damage dealt - 120s CD.",
+        "passive": "Deal 15 extra basic damage to minions.",
+        "stats": {"p_power": 20, "p_pen": 10, "o_vamp": 10, "haste": 10},
+        "unique-passive": ["Crest3"]
+    },
+    {
+        "name": "Nex",
+        "cost": 350,
+        "active": "Dash forward 400 units and deal (+75% Bonus Physical Power)(100% of Sow) physical damage to all enemy heroes within 500 units and slow them by 80% for 0.5 seconds - 90s CD.",
+        "passive": "Store 30% of damage dealt to enemy heroes in the past 5 seconds as Sow. Deal 15 extra basic damage to minions.",
+        "stats": {"p_power": 30, "p_pen": 20, "haste": 10},
+        "unique-passive": ["Crest3"]
+    },
+    {
+        "name": "Ortus",
+        "cost": 350,
+        "active": "Gain 15% bonus movement speed decaying over 6 seconds. During this time your next 3 basic attacks or damaging abilities will deal 26 (+10% Physical Power) bonus True Damage and reduce current basic ability cooldowns by 50% - 90s CD.",
+        "passive": "Deal 15 extra basic damage to minions.",
+        "stats": {"p_power": 25, "p_pen": 15, "haste": 20},
+        "unique-passive": ["Crest3"]
+    },
+    {
+        "name": "Liberator",
+        "cost": 350,
+        "active": "Gain a shield equal to 150 (+10 per level)(+60% Bonus Physical Power) for 6 seconds, additionally you gain 20% lifesteal whilst the shield maintains - 150s CD.",
+        "passive": "Deal 15 extra basic damage to minions.",
+        "stats": {"p_power": 25, "atk_speed": 10, "lifesteal": 5},
+        "unique-passive": ["Crest3"]
+    },
+    {
+        "name": "Pacifier",
+        "cost": 350,
+        "active": "Dash 600 units and gain 30% attack speed for the 6 seconds. Killing a Hero within the duration resets the cooldown - 120s CD.",
+        "passive": "Deal 15 extra basic damage to minions.",
+        "stats": {"p_power": 20, "atk_speed": 10, "lifesteal": 5, "c_chance": 20},
+        "unique-passive": ["Crest3"]
+    },
+    {
+        "name": "Eviscerator",
+        "cost": 350,
+        "active": "Deal an additional 6% of the target's maximum health as true damage and heal for 50% of the damage dealt for 6 seconds - 90s CD.",
+        "passive": "Deal 15 extra basic damage to minions.",
+        "stats": {"p_power": 25, "atk_speed": 30, "lifesteal": 5},
+        "unique-passive": ["Crest3"]
+    },
+    {
+        "name": "Brutallax",
+        "cost": 350,
+        "active": "Cleanse CC, then gain 50% Tenacity and 30% attack speed for 6 seconds. Successful Basic attacks extend this duration by 0.5 seconds on-hit - 120s CD.",
+        "passive": "Deal 15 extra basic damage to minions.",
+        "stats": {"p_power": 25, "health": 250, "lifesteal": 10},
+        "unique-passive": ["Crest3"]
+    },
+    {
+        "name": "Iceskorn Talons",
+        "cost": 350,
+        "active": "Create a dueling zone around you in a 1000u radius that remains for 20 seconds. Enemy units within are slowed by 20% and you gain 10% increased Damage and movement speed whilst inside - 60s CD.",
+        "passive": "Deal 15 extra basic damage to minions.",
+        "stats": {"p_power": 25, "health": 250, "haste": 15},
+        "unique-passive": ["Crest3"]
+    },
+    {
+        "name": "Fenix",
+        "cost": 350,
+        "active": "Mark your current location. If you die within 8 seconds, resurrect at the target location with 15% maximum health - 120s CD.",
+        "passive": "Deal 15 extra basic damage to minions.",
+        "stats": {"p_power": 40, "health": 250},
+        "unique-passive": ["Crest3"]
+    },
+    {
+        "name": "Soulbearer",
+        "cost": 350,
+        "active": "Shield yourself for 30% maximum mana for 5 seconds, while shielded you are immune to CC - 120s CD.",
+        "passive": "Deal 15 extra basic damage to minions.",
+        "stats": {"m_power": 30, "mana": 300, "m_regen": 1, "haste": 10},
+        "unique-passive": ["Crest3"]
+    },
+    {
+        "name": "Time-Flux Band",
+        "cost": 350,
+        "active": "Mark your current location, after 5 seconds, teleport back to the marked location and reset your basic ability cooldowns - 60s CD.",
+        "passive": "Deal 15 extra basic damage to minions.",
+        "stats": {"m_power": 30, "mana": 150, "m_regen": 1, "haste": 20},
+        "unique-passive": ["Crest3"]
+    },
+    {
+        "name": "Epoch",
+        "cost": 350,
+        "active": "Enter Stasis for 2.5 seconds - 90s CD.",
+        "passive": "Deal 15 extra basic damage to minions.",
+        "stats": {"m_power": 30, "mana": 150, "m_regen": 1, "health": 200},
+        "unique-passive": ["Crest3"]
+    },
+    {
+        "name": "Thread of Mortality",
+        "cost": 350,
+        "active": "Designate a nearby allied hero as a Companion. If your Companion is within 800 units and takes damage greater than 8% of their maximum health, they gain a 100 (+15% Ability Power)(+8% Bonus Health) shield and you both deal 10% increased damage for 5 seconds. If either you or your Companion die, the other receives a 10% movement speed boost for 5 seconds - 30s CD.",
+        "passive": "Double Passive Gold income and receive diminishing gold from excessive minion kills.",
+        "stats": {"m_power": 20, "m_regen": 1, "haste": 20},
+        "unique-passive": ["Crest3"]
+    },
+    {
+        "name": "Silentium",
+        "cost": 350,
+        "active": "Silences a target within 900 units for 2 seconds, if this interrupts an ability, deal 150 (+30% Magical Power)(+30% Bonus Physical Power) magic damage - 120s CD.",
+        "passive": "Double Passive Gold income and receive diminishing gold from excessive minion kills.",
+        "stats": {"m_power": 30, "m_armor": 20, "m_regen": 2},
+        "unique-passive": ["Crest3"]
+    },
+    {
+        "name": "Malediction",
+        "cost": 350,
+        "active": "Target an enemy hero within 1000 units, slowing and crippling them by 50% for 3s - 120s CD",
+        "passive": "Double Passive Gold income and receive diminishing gold from excessive minion kills.",
+        "stats": {"m_power": 25, "p_armor": 25, "m_regen": 2},
+        "unique-passive": ["Crest3"]
+    },
+    {
+        "name": "Citadel",
+        "cost": 350,
+        "active": "Redirect 30% of all damage to nearby allied heroes within 800 units to yourself and reduce it by 80% for 6 seconds. This effect disables if you fall below 15% maximum health - 120s CD.",
+        "passive": "Double Passive Gold income and receive diminishing gold from excessive minion kills.",
+        "stats": {"health": 300, "h_regen": 1, "p_armor": 15, "m_armor": 10},
+        "unique-passive": ["Crest3"]
+    },
+    {
+        "name": "Sanctification",
+        "cost": 350,
+        "active": "Grants a shield to nearby allied heroes within 1000 units and yourself for up to 5s, absorbing up to 150 (+10% of caster's maximum health). Whilst the shield holds, heroes gain 50% tenacity - 120s CD.",
+        "passive": "Double Passive Gold income and receive diminishing gold from excessive minion kills.",
+        "stats": {"health": 400, "h_regen": 2, "m_armor": 2},
+        "unique-passive": ["Crest3"]
+    },
+    {
+        "name": "Rift Walkers",
+        "cost": 350,
+        "active": "Dash forward 400 units and pull all enemy heroes within 500 units towards you. Enemy heroes pulled take 10% increased damage for 3 seconds - 150s CD.",
+        "passive": "Double Passive Gold income and receive diminishing gold from excessive minion kills.",
+        "stats": {"m_power": 20, "health": 200, "h_regen": 2, "mana": 150},
+        "unique-passive": ["Crest3"]
+    },
+    {
+        "name": "Nyr Warboots",
+        "cost": 350,
+        "active": "Gain 20% movement speed and gain stacks of Resilience equal to damage taken for 6 seconds. After the duration, restore health equal to 60% of Resilience over 6 seconds - 120s CD.",
+        "passive": "Deal 15 extra basic damage to minions.",
+        "stats": {"health": 350, "h_regen": 2, "p_armor": 20, "m_armor": 20},
+        "unique-passive": ["Crest3"]
+    },
+    {
+        "name": "Saphir's Mantle",
+        "cost": 350,
+        "active": "Take and deal 0.8% less damage per 1% missing health for 6 seconds 0 120s CD.",
+        "passive": "Deal 15 extra basic damage to minions.",
+        "stats": {"health": 400, "h_regen": 2, "p_armor": 10, "m_armor": 25},
+        "unique-passive": ["Crest3"]
+    },
+    {
+        "name": "Razorback",
+        "cost": 350,
+        "active": "For 6 seconds, everytime you are attacked, return 40% of the damage dealt back to the source - 90s CD.",
+        "passive": "Deal 15 extra basic damage to minions.",
+        "stats": {"health": 300, "h_regen": 2, "p_armor": 35, "m_armor": 10},
+        "unique-passive": ["Crest3"]
+    },
+    {
+        "name": "Astral Catalyst",
+        "cost": 3400,
+        "active": "",
+        "passive": "Grants bonus Magical Power equal to 3.5% of maximum mana. When you damage an enemy target with an ability or basic attack restore 0.3% of your maximum mana over 3 seconds, stacking up to 4 times. At maximum stacks gain 10 Ability Haste.",
+        "stats": {"m_power": 45, "mana": 500, "haste": 10},
+        "unique-passive": []
+    },
+    {
+        "name": "Augmentation",
+        "cost": 3800,
+        "active": "",
+        "passive": "Spellblade - After using an ability, your next 2 Basic Attacks within 6 seconds deal (+100% Base Physical Power) bonus physical damage on-hit - 4s CD. Basic attacks deal 35 true damage on-hit.",
+        "stats": {"p_power": 35, "health": 200, "atk_speed": 25, "haste": 20},
+        "unique-passive": ["Spellblade"]
+    },
+    {
+        "name": "Azure Core",
+        "cost": 3400,
+        "active": "",
+        "passive": "Font - Killing an enemy minion grants 8 bonus mana per stack, up to a maximum bonus of 400 bonus mana. At maximum stacks, gain 20 Ability Haste. When you damage an enemy target with an ability or basic attack, restore 0.3% of your maximum mana over 3 seconds, stacking up to 4 times.At maximum stacks gain 10 Ability Haste.",
+        "stats": {"m_power": 35, "mana": 300, "haste": 10},
+        "unique-passive": ["Font"]
+    },
+    {
+        "name": "Basilisk",
+        "cost": 3400,
+        "active": "",
+        "passive": "Corrode - Dealing damage to an enemy hero reduces their Physical Armor by 5% for 2 seconds. Stacks up to 6 times. Sunder - Every third consecutive basic attack against enemy heroes deals 15 (3% Bonus Health) bonus physical damage on-hit and slows them by 10% for 2 seconds.",
+        "stats": {"p_power": 40, "health": 350, "haste": 20},
+        "unique-passive": ["Corrode", "Sunder"]
+    },
+    {
+        "name": "Blackout",
+        "cost": 2800,
+        "active": "Reveal nearby stealthed heroes and wards and gain 15% decaying movement speed for 10 seconds - 90s CD.",
+        "passive": "",
+        "stats": {"p_power": 45, "p_pen": 10, "haste": 10},
+        "unique-passive": []
+    },
+    {
+        "name": "Book of Dreams",
+        "cost": 2600,
+        "active": "",
+        "passive": "Your next heal or shield will additionally heal the target (lowest % health for priority AOE) for 15% (+1% per 20 Magical Power) of their maximum health over 5 seconds. Dealing damage to an enemy hero reduces the cooldown by 5 seconds per basic attack or ability - 30s CD. Your heals and shields are 15% more effective.",
+        "stats": {"m_power": 50, "m_regen": 3},
+        "unique-passive": []
+    },
+    {
+        "name": "Breach",
+        "cost": 2750,
+        "active": "",
+        "passive": "Abilites deal 50% bonus damage to shielded targets. Cleave - Basic Attacks and Damaging Abilities deal (+60% Total Physical Power) physical damage in a small area around the target.",
+        "stats": {"p_power": 40, "health": 200, "lifesteal": 10},
+        "unique-passive": ["Cleave"]
+    },
+    {
+        "name": "Caustica",
+        "cost": 3000,
+        "active": "",
+        "passive": "Gain 35% Magic Penetration.",
+        "stats": {"m_power": 70, "m_pen": 35},
+        "unique-passive": []
+    },
+    {
+        "name": "Combustion",
+        "cost": 3300,
+        "active": "",
+        "passive": "Gain charges upon moving. At 100 charges, the next instance of magic damage you deal will expend all charges to deal 60 (+15% Magical Power) bonus magic damage in a large radius. When you damage an enemy target with an ability or basic attack restore 0.3% of your maximum mana over 3 seconds, stacking up to 4 times. At maximum stacks, gain 10 Ability Haste.",
+        "stats": {"m_power": 60, "m_pen": 10, "mana": 300},
+        "unique-passive": []
+    },
+    {
+        "name": "Crystal Tear",
+        "cost": 2650,
+        "active": "",
+        "passive": "Healing or shielding allied heroes grants you and them 30 magical power and 20 ability haste for 5 seconds. Your heals and shields are 15% more effective.",
+        "stats": {"m_power": 20, "m_armor": 20, "m_regen": 5, "haste": 10},
+        "unique-passive": []
+    },
+    {
+        "name": "Crystal Cuirass",
+        "cost": 3100,
+        "active": "",
+        "passive": "Increases all healing received by 30%.",
+        "stats": {"health": 400, "h_regen": 2, "m_armor": 30, "haste": 10},
+        "unique-passive": []
+    },
+    {
+        "name": "Cyclone",
+        "cost": 2600,
+        "active": "",
+        "passive": "Basic attacks deal (+80% Physical Power) to enemies within 400 units of the target (Ranged Only).",
+        "stats": {"atk_speed": 45, "c_chance": 20, "movespeed": 5},
+        "unique-passive": []
+    },
+    {
+        "name": "Draconum",
+        "cost": 3000,
+        "active": "",
+        "passive": "Hero takedowns grant you 30 Attack Speed for 8 seconds and instantly heal you for 30% of your missing health.",
+        "stats": {"p_power": 30, "p_armor": 25, "m_armor": 25, "haste": 10},
+        "unique-passive": []
+    },
+    {
+        "name": "Dreadwind",
+        "cost": 2950,
+        "active": "",
+        "passive": "Spell Shield - Grants a spell shield that blocks the next enemy ability - 60s CD. Sunder - Every third consecutive basic attack or ability against enemy heroes deals 20 (+15% Bonus Physical Power) bonus physical damage on-hit, slows them by 20% for 2 seconds and reduces the cooldown of Spell Shield by 5 seconds.",
+        "stats": {"p_power": 35, "p_pen": 8, "health": 300},
+        "unique-passive": ["Spell Shield", "Sunder"]
+    },
+    {
+        "name": "Dreambinder",
+        "cost": 3000,
+        "active": "",
+        "passive": "Damaging abilities slow affected units by 30% for 1 second. Fiend - Dealing magic damage to an enemy hero increases magic damage dealt by 3% for 5 seconds. Stacks up to 5 times.",
+        "stats": {"m_power": 80, "health": 300},
+        "unique-passive": ["Fiend"]
+    },
+    {
+        "name": "Dynamo",
+        "cost": 2700,
+        "active": "",
+        "passive": "Immobilizing an enemy deals 60 (+8% Bonus Health) bonus magic damage to the target and nearby enemies as well as shreadding their Magical Armor by 30% for 5 seconds - 15s CD.",
+        "stats": {"health": 400, "p_armor": 35, "mana": 200},
+        "unique-passive": []
+    },
+    {
+        "name": "Elafrost",
+        "cost": 2600,
+        "active": "",
+        "passive": "Winter Eye - When an enemy hero within 3000 units takes damage that brings them below 30% of their maximum health, grant vision and slow them by 20% (+5% Magical Power) for 3 seconds - 30s CD. Slowing an enemy affected by Winter Eye removes the slow and roots them for 1 second.",
+        "stats": {"m_power": 50, "m_regen": 2.5, "haste": 10},
+        "unique-passive": ["Winter Eye"]
+    },
+    {
+        "name": "Fell Blade",
+        "cost": 3100,
+        "active": "",
+        "passive": "Corrode - Dealing damage to an enemy hero reduces their Physical Armor by 5% for 2 seconds. Stacks up to 6 times. Your abilities deal 15% bonus true damage against targets with 6 stacks of Corrode.",
+        "stats": {"p_power": 40, "p_pen": 8, "haste": 20},
+        "unique-passive": ["Corrode"]
+    },
+    {
+        "name": "Fire Blossom",
+        "cost": 2800,
+        "active": "",
+        "passive": "Blaze - Deal 20 (+1.5% Bonus Health) magic damage per second to nearby enemies. Increased by 50% against immobilized targets.",
+        "stats": {"health": 200, "mana": 200, "p_armor": 50},
+        "unique-passive": ["Blaze"]
+    },
+    {
+        "name": "Flux Matrix",
+        "cost": 2850,
+        "active": "",
+        "passive": "Nearby enemy heroes take 15% additional magic damage. Tenacity - Gain 35% Tenacity.",
+        "stats": {"health": 350, "h_regen": 2, "m_armor": 30, "haste": 10, "tenacity": 35},
+        "unique-passive": ["Tenacity"]
+    },
+    {
+        "name": "Frostguard",
+        "cost": 3000,
+        "active": "",
+        "passive": "Slow nearby enemies by 10% and reduce their attack speed by 10%. Stifle - Reduce the attack speed of enemies by 10% for 3 seconds when struck by a basic attack.",
+        "stats": {"health": 150, "p_armor": 45, "mana": 250, "haste": 10},
+        "unique-passive": ["Stifle"]
+    },
+    {
+        "name": "Galaxy Greaves",
+        "cost": 3050,
+        "active": "",
+        "passive": "Moving generates stacks of ZeroG, at 100 stacks your next jump will have increased height. Celerity - Gain 10% movement speed out of combat",
+        "stats": {"p_armor": 35, "m_armor": 35, "m_regen": 3},
+        "unique-passive": ["Celerity"]
+    },
+    {
+        "name": "Glacial Maul",
+        "cost": 3200,
+        "active": "",
+        "passive": "Spellblade - After using an ability, your next 2 Basic Attacks within 6 seconds deal (+50% Base Physical Power) bonus physical damage on-hit and slow the target by 25% for 2 seconds - 4s CD. Receiving physical damage inflicts Blight to the source for 3 seconds.",
+        "stats": {"health": 150, "p_armor": 45, "mana": 250, "haste": 10},
+        "unique-passive": ["Spellblade"]
+    },
+    {
+        "name": "Hellfire",
+        "cost": 3000,
+        "active": "",
+        "passive": "Blaze - Deal 15 (+8% Total Physical Power) magic damage per second to nearby enemies, double against targets below 30% HP",
+        "stats": {"p_power": 35, "health": 250, "mana": 250},
+        "unique-passive": ["Blaze"]
+    },
+    {
+        "name": "Hexbound Bracers",
+        "cost": 2900,
+        "active": "",
+        "passive": "Restore mana equal to 9-18% (based on level) of damage taken from heroes. Gain 20 Ability Haste when above 80% Maximum Mana.",
+        "stats": {"p_armor": 50, "mana": 250, "haste": 15},
+        "unique-passive": []
+    },
+    {
+        "name": "Imperator",
+        "cost": 3300,
+        "active": "",
+        "passive": "Dire Strikes - Critical Strikes deal an additional 5% true damage per 20% Critical Strike Chance.",
+        "stats": {"p_power": 55, "c_chance": 20},
+        "unique-passive": ["Dire Strikes"]
+    },
+    {
+        "name": "Leafsong",
+        "cost": 2750,
+        "active": "Expend all stacks of Penance to heal nearby allied heroes for 20% of Penance - 15s CD.",
+        "passive": "Healing or shielding an ally grants charges of Penance equal to the value shielded/healed. Stacks cap at 1000. Your heals and shields are 15% more effective.",
+        "stats": {"m_power": 30, "health": 200, "m_regen": 3.5, "haste": 10},
+        "unique-passive": []
+    },
+    {
+        "name": "Legacy",
+        "cost": 3000,
+        "active": "",
+        "passive": "Bravery - If you would take damage that would reduce you below 30% of your maximum health, cleanse all crowd control and gain 20% lifesteal for 8 seconds - 90s CD. Gain 1 Physical Power for every missing 2% Health, for a maximum of 40 Physical Power.",
+        "stats": {"p_power": 25, "p_armor": 25, "health": 300},
+        "unique-passive": ["Bravery"]
+    },
+    {
+        "name": "Lifebinder",
+        "cost": 3300,
+        "active": "",
+        "passive": "Hitting an enemy hero with an ability restores 2.5% of your maximum health over 2.5 seconds. Excess healing will be converted to a shield up to (+10% maximum health) for 10 seconds.",
+        "stats": {"m_power": 50, "m_lifesteal": 10, "health": 300, "haste": 10},
+        "unique-passive": []
+    },
+    {
+        "name": "Lightning Hawk",
+        "cost": 3400,
+        "active": "",
+        "passive": "Zap - Every fourth basic attack deals 60 (+80% Bonus Physical Power) bonus magic damage on-hit.",
+        "stats": {"p_power": 35, "atk_speed": 20, "c_chance": 20, "movespeed": 3},
+        "unique-passive": ["Zap"]
+    },
+    {
+        "name": "Magnify",
+        "cost": 3200,
+        "active": "",
+        "passive": "Spellblade - After using an ability, your next 2 Basic Attacks within 6 seconds deal (+60% Base Physical Power)(+25% Magical Power) bonus magic damage on-hit - 4s CD.",
+        "stats": {"m_power": 70, "haste": 20},
+        "unique-passive": ["Spellblade"]
+    },
+    {
+        "name": "Marshall",
+        "cost": 2700,
+        "active": "",
+        "passive": "Yourself and nearby allied heroes gain 20% Attack Speed and deal 20 magic damage on-hit.",
+        "stats": {"m_power": 40, "m_regen": 3, "haste": 10},
+        "unique-passive": []
+    },
+    {
+        "name": "Megacosm",
+        "cost": 3400,
+        "active": "",
+        "passive": "Disintegrate - Dealing damage with an ability burns the target, causing them to take (+6% target's maximum health) total magic damage over 3 seconds. Dealing damage with a different ability, within the duration will deal (+2% targets maximum health) magic damage instantly and refresh the duration.",
+        "stats": {"m_power": 50, "health": 300, "haste": 20},
+        "unique-passive": ["Disintegrate"]
+    },
+    {
+        "name": "Mindrazor",
+        "cost": 3000,
+        "active": "",
+        "passive": "Gain 1% attack speed per 8 mana consumed for 6 seconds, stacking up to 30% bonus attack speed. Grants bonus physical power equal to (+2% Maximum Mana).",
+        "stats": {"p_power": 35, "mana": 600},
+        "unique-passive": []
+    },
+    {
+        "name": "Mirage",
+        "cost": 2600,
+        "active": "",
+        "passive": "Dancer - Basic attacking a hero grants the ability to travel through units and 2% movement speed for 3 seconds stacking up to 5 times. Reaching max stacks of Dancer grants a (+80% Total Physical Power) shield for 6 seconds - 60s CD.",
+        "stats": {"atk_speed": 35, "c_chance": 20},
+        "unique-passive": ["Dancer"]
+    },
+    {
+        "name": "Mooncleaver",
+        "cost": 3400,
+        "active": "",
+        "passive": "Corrode - Dealing damage to an enemy hero reduces their Physical Armor by 5% for 2 seconds. Stacks up to 6 times. Critical Strikes deal 10% more damage against targets with 6 stacks of Corrode.",
+        "stats": {"p_power": 40, "c_chance": 20, "haste": 20},
+        "unique-passive": ["Corrode"]
+    },
+    {
+        "name": "Mutilator",
+        "cost": 3600,
+        "active": "",
+        "passive": "Soulblade - After using an ability, your next 2 Basic Attacks within 6 seconds deal (+75% Base Physical Power) bonus physical damage on-hit and heals you equal to the damage dealt - 4s CD. Warlord - Basic attacks against enemy heroes deal 2% of their maximum health as true damage on-hit and heal you equal to the bonus damage dealt.",
+        "stats": {"p_power": 40, "health": 200, "lifesteal": 10, "haste": 20},
+        "unique-passive": ["Soulblade", "Warlord"]
+    },
+    {
+        "name": "Nightfall",
+        "cost": 2950,
+        "active": "",
+        "passive": "Dusk - Dealing damage to an isolated enemy hero (no other enemy heroes within 800 units) grants 6 Attack Speed and 6 Ability Haste for 6 seconds. Dusk stacks up to 6 times.",
+        "stats": {"p_power": 40, "p_pen": 12, "lifesteal": 10, "m_lifesteal": 10},
+        "unique-passive": ["Dusk"]
+    },
+    {
+        "name": "Nullifier",
+        "cost": 2700,
+        "active": "",
+        "passive": "Safeguard - If you take (15% maximum health) magic damage in the last 5 seconds, gain 10% Movement Speed, 15% Lifesteal and 40 Magical Armor for 5 seconds. This duration is refreshed upon taking additional magic damage - 90s CD.",
+        "stats": {"p_power": 45, "m_armor": 30, "haste": 20},
+        "unique-passive": ["Safeguard"]
+    },
+    {
+        "name": "Oathkeeper",
+        "cost": 3600,
+        "active": "",
+        "passive": "Order - Increase your ability haste by (+10% Magical Power).",
+        "stats": {"m_power": 120},
+        "unique-passive": ["Order"]
+    },
+    {
+        "name": "Oblivion Crown",
+        "cost": 3600,
+        "active": "",
+        "passive": "Order - Increase your magical power by (+50% Ability Haste).",
+        "stats": {"m_power": 90, "haste": 20},
+        "unique-passive": ["Order"]
+    },
+    {
+        "name": "Painweaver",
+        "cost": 2850,
+        "active": "",
+        "passive": "Spellblade - After using an ability, your next 2 Basic Attacks or Abilities within 6 seconds deal (+60% Base Physical Power)(+20% Bonus Physical Power) bonus physical damage on-hit - 4s CD.",
+        "stats": {"p_power": 45, "p_pen": 15, "haste": 10},
+        "unique-passive": ["Spellblade"]
+    },
+    {
+        "name": "Palisade",
+        "cost": 2800,
+        "active": "",
+        "passive": "When struck by a basic attack on-hit, inflict blight and bleed the opponent dealing 15 (+30% bonus Physical Armor) magic damage over 3 seconds.",
+        "stats": {"health": 200, "p_armor": 60},
+        "unique-passive": []
+    },
+    {
+        "name": "Prophecy",
+        "cost": 3100,
+        "active": "",
+        "passive": "Basic attacks deal 20 (+15% Magical Power) bonus magic damage on-hit. Gain (+50% Ability Haste) Attack Speed.",
+        "stats": {"m_power": 60, "atk_speed": 20, "haste": 20},
+        "unique-passive": []
+    },
+    {
+        "name": "Raiment of Renewal",
+        "cost": 2950,
+        "active": "",
+        "passive": "Regenerate 4% maximum health every second if damage has not been taken in the last 5 seconds.",
+        "stats": {"health": 600, "h_regen": 4, "mana": 250},
+        "unique-passive": []
+    },
+    {
+        "name": "Reckoning",
+        "cost": 3500,
+        "active": "",
+        "passive": "Critical strikes against heroes deal 8% of their missing health as bonus physical damage on-hit. Takedowns heal you for (+100% Total Physical Power) over 5 seconds.",
+        "stats": {"p_power": 50, "c_chance": 20, "lifesteal": 10},
+        "unique-passive": []
+    },
+    {
+        "name": "Salvation",
+        "cost": 3150,
+        "active": "",
+        "passive": "If you would take damage that would reduce you below 30% of your maximum health, you gain (+15% maximum health)(+60% Total Physical Power) shield (50% for Ranged Heroes). While the shield holds, deal an additional 35 magic damage on-hit and heal for the damage dealt - 90s CD.",
+        "stats": {"p_power": 35, "m_armor": 30, "health": 300},
+        "unique-passive": []
+    },
+    {
+        "name": "Severance",
+        "cost": 3300,
+        "active": "Purify - Cleanse all CC Debuffs from yourself and gain 80% Tenacity for 3 seconds - 90s CD.",
+        "passive": "",
+        "stats": {"p_power": 40, "m_armor": 30, "lifesteal": 15},
+        "unique-passive": ["Purify"]
+    },
+    {
+        "name": "Sky Splitter",
+        "cost": 3200,
+        "active": "",
+        "passive": "Warlord - Basic attacks against enemy heroes deal 15% of their maximum health as true damage on-hit and heal you equal to the bonus damage dealt. Basic attacks deal 3% of the targets max health as bonus physical damage on-hit, capped at 50 damage on non-heroes.",
+        "stats": {"p_power": 30, "atk_speed": 25, "lifesteal": 10},
+        "unique-passive": ["Warlord"]
+    },
+    {
+        "name": "Spellbreaker",
+        "cost": 2950,
+        "active": "",
+        "passive": "Spell Shield - Grants a spell shield that blocks the next enemy ability - 40s CD.",
+        "stats": {"m_power": 55, "m_armor": 35, "haste": 10},
+        "unique-passive": ["Spell Shield"]
+    },
+    {
+        "name": "Star Slayer",
+        "cost": 3300,
+        "active": "",
+        "passive": "Disintegrate - Abilities deal 1% additional damage for every 40 maximum health the target has more than you, up to 40% maximum.",
+        "stats": {"m_power": 60, "haste": 10, "m_regen": 3},
+        "unique-passive": ["Disintegrate"]
+    },
+    {
+        "name": "Stonewall",
+        "cost": 2750,
+        "active": "",
+        "passive": "If you would take damage that would reduce you below 30% maximum health, you unleash a shockwave that stuns all nearby enemies for 1.5s - 90s CD. Reduce physical damage taken by 5 (+3% Physical Armor).",
+        "stats": {"health": 250, "h_regen": 3, "p_armor": 35},
+        "unique-passive": []
+    },
+    {
+        "name": "Storm Breaker",
+        "cost": 3000,
+        "active": "",
+        "passive": "Zap - Every fourth basic attack releases a bolt of lightning that leaps between 8 targets, dealing 60 (+10 per level) magic damage.",
+        "stats": {"p_power": 35, "atk_speed": 20, "haste": 10, "lifesteal": 10, "m_lifesteal": 10},
+        "unique-passive": ["Zap"]
+    },
+    {
+        "name": "Tainted Rounds",
+        "cost": 2800,
+        "active": "",
+        "passive": "Dealing physical damage inflicts Blight for 5 seconds. Gain 25% Physical Penetration.",
+        "stats": {"p_power": 45, "p_pen": 25},
+        "unique-passive": []
+    },
+    {
+        "name": "Tainted Sceptre",
+        "cost": 2800,
+        "active": "",
+        "passive": "Dealing magical damage inflicts Blight for 3 seconds.",
+        "stats": {"m_power": 70, "m_lifesteal": 20},
+        "unique-passive": []
+    },
+    {
+        "name": "The Perforator",
+        "cost": 2800,
+        "active": "",
+        "passive": "Gain 35% Physical Penetration",
+        "stats": {"p_power": 45, "p_pen": 35},
+        "unique-passive": []
+    },
+    {
+        "name": "Timewarp",
+        "cost": 2950,
+        "active": "",
+        "passive": "When you cast an ability, reduce all other current basic ability cooldowns by 20%. Ferrummancer - Casting an ability grants 5 magical power and physical armor for 5 seconds stacking up to 5 times.",
+        "stats": {"m_power": 40, "p_armor": 20, "haste": 15},
+        "unique-passive": ["Ferrummancer"]
+    },
+    {
+        "name": "Truesilver Bracelet",
+        "cost": 2550,
+        "active": "",
+        "passive": "When you cast your ultimate, gain a Spell Shield for 6 seconds - 45s CD. Tenacity - Gain 35% Tenacity.",
+        "stats": {"m_power": 30, "health": 300, "m_armor": 25},
+        "unique-passive": ["Tenacity"]
+    },
+    {
+        "name": "Unbroken Will",
+        "cost": 2800,
+        "active": "",
+        "passive": "If you are hit by a displacement, you restore 20% of your maximum health over 5 seconds. Tenacity - Gain 35% Tenacity.",
+        "stats": {"health": 450, "h_regen": 2.5, "m_armor": 25},
+        "unique-passive": ["Tenacity"]
+    },
+    {
+        "name": "Vanquisher",
+        "cost": 2900,
+        "active": "",
+        "passive": "Font - Killing an enemy minion grants 8 bonus mana per stack, up to a maximum of 400 bonus mana. At maximum stacks, gain 20 Attack Speed. Basic attacks and physical damage abilities deal (+2.5% Maximum Mana) bonus physical damage on-hit. Only triggers once per spell or basic attack. Regenerate 15% of mana spent over 3 seconds.",
+        "stats": {"p_power": 30, "atk_speed": 10, "mana": 300, "m_regen": 1.5},
+        "unique-passive": ["Font"]
+    },
+    {
+        "name": "Void Helm",
+        "cost": 2800,
+        "active": "",
+        "passive": "When receiving magical damage, gain 5 magical armor and 1 health regeneration per each 100 magic damage dealt for 8 seconds, stacking up to 10 times.",
+        "stats": {"health": 250, "h_regen": 3, "m_armor": 40},
+        "unique-passive": []
+    },
+    {
+        "name": "Wardens Faith",
+        "cost": 3000,
+        "active": "",
+        "passive": "Enemy critical strikes deal 25% reduced damage. Stifle - Reduce the attack speed of enemies by 10% for 3 seconds when struck by a basic attack. This effect is doubled for critical strikes.",
+        "stats": {"health": 350, "p_armor": 50},
+        "unique-passive": ["Stifle"]
+    },
+    {
+        "name": "Wraith Leggings",
+        "cost": 3000,
+        "active": "",
+        "passive": "Dealing magic damage to an enemy hero grants 3% increased Magical Power for 6 seconds stacking up to 3 times. At maximum stacks, gain 10% movement speed",
+        "stats": {"m_power": 80, "m_pen": 15},
+        "unique-passive": []
+    },
+    {
+        "name": "Zephyr",
+        "cost": 3000,
+        "active": "Displace all nearby enemies up to 500 units and deal 100 (+30% Magical Power) magic damage to them - 90s CD.",
+        "passive": "",
+        "stats": {"m_power": 70, "p_armor": 35},
+        "unique-passive": []
+    },
+    {
+       "name": "Life Stream",
+       "cost": 200,
+       "active": "",
+       "passive": "",
+       "stats": {"h_regen": 1}
+      },
+      {
+       "name": "Codex",
+       "cost": 300,
+       "active": "",
+       "passive": "",
+       "stats": {"m_power": 10}
+      },
+      {
+       "name": "Tunic",
+       "cost": 300,
+       "active": "",
+       "passive": "",
+       "stats": {"p_armor": 10}
+      },
+      {
+       "name": "Wraps",
+       "cost": 300,
+       "active": "",
+       "passive": "",
+       "stats": {"m_armor": 12}
+      },
+      {
+       "name": "Longbow",
+       "cost": 300,
+       "active": "",
+       "passive": "",
+       "stats": {"atk_speed": 10}
+      },
+      {
+       "name": "Shortsword",
+       "cost": 400,
+       "active": "",
+       "passive": "",
+       "stats": {"p_power": 10}
+      },
+      {
+       "name": "Spirit Beads",
+       "cost": 400,
+       "active": "",
+       "passive": "",
+       "stats": {"mana": 200}
+      },
+      {
+       "name": "Nocstone",
+       "cost": 400,
+       "active": "",
+       "passive": "Stealth Wards last 30 seconds longer. Can be upgraded to Solstone ater upgrading Consort or Guardian Crest to its final Evolution.",
+       "stats": {"m_power:": 5, "haste:": 5}
+      },
+      {
+       "name": "Vitality Beads",
+       "cost": 450,
+       "active": "",
+       "passive": "",
+       "stats": {"health": 150}
+      },
+      {
+       "name": "Spell Slasher",
+       "cost": 600,
+       "active": "",
+       "passive": "Spellblade - After using an ability, your next 2 Basic Attacks within 6 seconds deal (+40% Base Physical Power) bonus physical damage on-hit - 4s CD.",
+       "stats": "",
+       "unique-passive": ["Spellblade"]
+      },
+      {
+       "name": "Crossbow",
+       "cost": 600,
+       "active": "",
+       "passive": "",
+       "stats": {"c_chance": 15}
+      },
+      {
+       "name": "Nullifying Mask",
+       "cost": 750,
+       "active": "",
+       "passive": "",
+       "stats": {"m_armor": 30}
+      },
+      {
+       "name": "Steel Mail",
+       "cost": 750,
+       "active": "",
+       "passive": "",
+       "stats": {"p_armor": 25}
+      },
+      {
+       "name": "Chronomatic Wand",
+       "cost": 750,
+       "active": "",
+       "passive": "",
+       "stats": {"m_power": 15, "haste": 10}
+      },
+      {
+       "name": "Sabre",
+       "cost": 800,
+       "active": "",
+       "passive": "",
+       "stats": {"p_power": 20}
+      },
+      {
+       "name": "Barbed Pauldron",
+       "cost": 800,
+       "active": "",
+       "passive": "Stifle - Reduce the attack speed of enemies by 10% for 3 seconds when struck by a basic attack.",
+       "stats": {"p_armor": 20},
+       "unique-passive": ["Stifle"]
+      },
+      {
+       "name": "Scepter",
+       "cost": 900,
+       "active": "",
+       "passive": "",
+       "stats": {"m_power": 30}
+      },
+      {
+       "name": "Divine Wreath",
+       "cost": 900,
+       "active": "",
+       "passive": "Your heals and shields are 10% more effective.",
+       "stats": {"m_power": 10, "m_regen": 2}
+      },
+      {
+       "name": "Temporal Ripper",
+       "cost": 900,
+       "active": "",
+       "passive": "",
+       "stats": {"p_power": 15, "haste": 10}
+      },
+      {
+       "name": "Banded Emerald",
+       "cost": 900,
+       "active": "",
+       "passive": "",
+       "stats": {"health": 300}
+      },
+      {
+       "name": "Violet Brooch",
+       "cost": 900,
+       "active": "",
+       "passive": "",
+       "stats": {"health": 200, "haste": 10}
+      },
+      {
+       "name": "Blood Tome",
+       "cost": 900,
+       "active": "",
+       "passive": "",
+       "stats": {"m_power": 15, "m_lifesteal": 10}
+      },
+      {
+       "name": "Polar Treads",
+       "cost": 950,
+       "active": "",
+       "passive": "Celerity - Gain 5% movespeed out of combat.",
+       "stats": {"m_armor": 15, "m_regen": 2},
+       "unique-passive": ["Celerity"]
+      },
+      {
+       "name": "Essence Ring",
+       "cost": 950,
+       "active": "",
+       "passive": "",
+       "stats": {"m_regen": 2.5, "haste": 10}
+      },
+      {
+       "name": "Crimson Edge",
+       "cost": 1000,
+       "active": "",
+       "passive": "",
+       "stats": {"p_power": 15, "lifesteal": 10}
+      },
+      {
+       "name": "Stalwart Gauntlets",
+       "cost": 1000,
+       "active": "",
+       "passive": "",
+       "stats": {"health": 200, "h_regen": 2}
+      },
+      {
+       "name": "Soul Chalice",
+       "cost": 1000,
+       "active": "",
+       "passive": "Regenerate 15% of mana spent over 3 seconds.",
+       "stats": {"mana": 300, "m_regen": 1}
+      },
+      {
+       "name": "Honed Kris",
+       "cost": 1025,
+       "active": "",
+       "passive": "Gain 6 Physical Penetration.",
+       "stats": {"p_power": 20, "p_pen": 6}
+      },
+      {
+       "name": "Fortified Mantle",
+       "cost": 1100,
+       "active": "",
+       "passive": "",
+       "stats": {"p_armor": 20, "m_armor": 20}
+      },
+      {
+       "name": "Serrated Blade",
+       "cost": 1100,
+       "active": "",
+       "passive": "Dealing physical damage inflicts Blight for 3 seconds.",
+       "stats": {"p_power": 20}
+      },
+      {
+       "name": "Spiked Birch",
+       "cost": 1100,
+       "active": "",
+       "passive": "Dealing magical damage inflicts Blight for 3 seconds.",
+       "stats": {"m_power": 25}
+      },
+      {
+       "name": "Brimstone",
+       "cost": 1150,
+       "active": "",
+       "passive": "Blaze - Deal 15 magic damage per second to nearby enemies.",
+       "stats": {"health": 150, "mana": 200},
+       "unique-passive": ["Blaze"]
+      },
+      {
+       "name": "Diffusal Cane",
+       "cost": 1150,
+       "active": "",
+       "passive": "Gain 8 Magic Penetration.",
+       "stats": {"m_power": 30, "m_pen": 8}
+      },
+      {
+       "name": "Composite Bow",
+       "cost": 1150,
+       "active": "",
+       "passive": "Basic attacks deal 15 bonus physical damage on-hit.",
+       "stats": {"atk_speed": 25}
+      },
+      {
+       "name": "Frosted Quartz",
+       "cost": 1150,
+       "active": "",
+       "passive": "",
+       "stats": {"p_armor": 15, "mana": 200, "haste": 10}
+      },
+      {
+       "name": "Horned Plate",
+       "cost": 1150,
+       "active": "",
+       "passive": "Receiving physical damage inflicts Blight to the source for 3 seconds.",
+       "stats": {"p_armor": 30}
+      },
+      {
+       "name": "Barbaric Cleaver",
+       "cost": 1200,
+       "active": "",
+       "passive": "Cleave - Basic Attacks deal (+40% Total Physical Power) physical damage in a small area around the target.",
+       "stats": {"p_power": 15, "health": 150},
+       "unique-passive": ["Cleave"]
+      },
+      {
+       "name": "Hallowed Braid",
+       "cost": 1200,
+       "active": "Purify - Cleanse all CC debuffs from yourself - 90s CD.",
+       "passive": "",
+       "stats": {"m_armor": 25},
+       "unique-passive": ["Purify"]
+      },
+      {
+       "name": "Zealous Tomahawk",
+       "cost": 1225,
+       "active": "",
+       "passive": "Gain 15% Physical Penetration.",
+       "stats": {"p_power": 20}
+      },
+      {
+       "name": "Swift Shawl",
+       "cost": 1250,
+       "active": "",
+       "passive": "Safeguard - If you take (15% maximum health) magic damage in the last 5 seconds, gain 10% movespeed and 30 magic resist for 3 seconds - 90s CD.",
+       "stats": {"p_power": 15, "m_armor": 20},
+       "unique-passive": ["Safeguard"]
+      },
+      {
+       "name": "Dusk Stave",
+       "cost": 1250,
+       "active": "",
+       "passive": "Spellblade - After using an ability, your next 2 Basic Attacks within 6 seconds deal (+15% Magical Power) (+50% Base Physical Power) bonus magical damage on-hit - 4s CD.",
+       "stats": {"m_power": 25},
+       "unique-passive": ["Spellblade"]
+      },
+      {
+       "name": "Abyssal Bracers",
+       "cost": 1300,
+       "active": "",
+       "passive": "Ferrumancer - Casting an ability grants 3 Magical Power and Physical Armor for 5 seconds, stacking up to 5 times.",
+       "stats": {"m_power": 20, "p_armor": 15},
+       "unique-passive": ["Ferrumancer"]
+      },
+      {
+       "name": "Claymore",
+       "cost": 1300,
+       "active": "",
+       "passive": "Sunder - Every third consecutive basic attack against enemy heroes deals 15 (+3% Bonus Health) bonus physical damage on-hit and slows them by 10% for 2 seconds.",
+       "stats": {"p_power": 10, "health": 200},
+       "unique-passive": ["Sunder"]
+      },
+      {
+       "name": "Tenacious Drape",
+       "cost": 1300,
+       "active": "",
+       "passive": "Tenacity - Gain 20% Tenacity.",
+       "stats": {"m_armor": 15, "health": 150 , "h_regen": 1.5, "tenacity": 20},
+       "unique-passive": ["Tenacity"]
+      },
+      {
+       "name": "Potent Staff",
+       "cost": 1350,
+       "active": "",
+       "passive": "",
+       "stats": {"m_power": 45}
+      },
+      {
+       "name": "Heroic Guard",
+       "cost": 1350,
+       "active": "",
+       "passive": "Bravery: If you would take damage that would reduce you below 30% of your maximum health, cleanse all CC debuffs from yourself - 90s CD.",
+       "stats": {"health": 150, "p_armor": 20},
+       "unique-passive": ["Bravery"]
+      },
+      {
+       "name": "Greatsword",
+       "cost": 1400,
+       "active": "",
+       "passive": "",
+       "stats": {"p_power": 35}
+      },
+      {
+       "name": "Solstone",
+       "cost": 0,
+       "active": "",
+       "passive": "",
+       "stats": ""
+      },
+      {
+       "name": "Rod of Thirst",
+       "cost": 1500,
+       "active": "",
+       "passive": "When you damage an enemy target with an ability or basic attack, restore 0.3% of your maximum mana over 3 seconds, stacking up to 4 times. At maximum stacks, gain 10 Ability Haste.",
+       "stats": {"m_power": 25, "mana": 250}
+      },
+      {
+       "name": "Ravenous Rapier",
+       "cost": 1500,
+       "active": "",
+       "passive": "Warlord - Basic attacks against enemy heroes deal 0.75% of their maximum health as true damage on-hit and heal you equal to the bonus damage dealt.",
+       "stats": {"p_power": 20, "lifesteal": 10},
+       "unique-passive": ["Warlord"]
+      },
+      {
+       "name": "Robust Arbalest",
+       "cost": 1500,
+       "active": "",
+       "passive": "Basic attacking an enemy hero grants 3% movespeed for 3 seconds.",
+       "stats": {"c_chance": 20, "atk_speed": 20}
+      },
+      {
+       "name": "Ruthless Broadsword",
+       "cost": 1500,
+       "active": "",
+       "passive": "Corrode - Dealing damage to an enemy hero reduces their Physical Armor by 5% for 2 seconds, stacking up to 6 times.",
+       "stats": {"p_power": 20, "haste": 10},
+       "unique-passive": ["Corrode"]
+      },
+      {
+       "name": "Void Crystal",
+       "cost": 1500,
+       "active": "",
+       "passive": "Fiend - Dealing magic damage to an enemy hero increases magic damage dealt by 3% for 5 seconds, stacking up to 4 times.",
+       "stats": {"m_power": 25, "health": 200},
+       "unique-passive": ["Fiend"]
+      },
+      {
+       "name": "Flourishing Totem",
+       "cost": 1500,
+       "active": "",
+       "passive": "Gain 2 Magical Power when damaging Enemy Heroes with an ability, stacking up to 15 times (3s CD). At maximum stacks, gain an additional 10 Magical Power. Lose all stacks on death.",
+       "stats": {"m_power": 20, "mana": 300}
+      },
+      {
+       "name": "Chaotic Core",
+       "cost": 1800,
+       "active": "",
+       "passive": "",
+       "stats": {"m_power": 50, "haste": 10}
+      },
+      {
+        "name": "Hunt",
+        "cost": 50,
+        "active": "",
+        "passive": "Artifact - Deal additional damage to monsters and heal based on the damage dealt. Basic attacks against monsters regenerate mana on-hit and execute large monsters under 300 (+50 per level) health. Slayer - Gain additional XP for each large monster kill as well as additional XP for you first large monster kill. Jungler - Receive less gold from lane minion kills. This effect disables after 15 minutes. Hunt is consumed after killing 30 monsters, removing the item, but granting the passives permanently.",
+        "stats": "",
+        "unique-passive": ["Artifact", "Slayer", "Jungler"]
+       },
+       {
+        "name": "Health Potion",
+        "cost": 50,
+        "active": "Consume - Regenerates 10 health per second for 15 seconds, restoring a total of 150 health.",
+        "passive": "",
+        "stats": ""
+       },
+       {
+        "name": "Mana Potion",
+        "cost": 50,
+        "active": "Consume - Restores 6 mana per second for 15 seconds, restoring a total of 90 mana.",
+        "passive": "",
+        "stats": ""
+       },
+       {
+        "name": "Rogue Crest",
+        "cost": 350,
+        "active": "",
+        "passive": "Dealing damage to an enemy hero/monster with an ability restores 10 health (Once per ability), killing an enemy target restores 5 Health. After restoring 350 Health, Evolve into Assassin Crest. Deal 15 extra basic damage to minions.",
+        "stats": {"p_power": 8, "haste": 5},
+        "unique-passive": ["Crest1"]
+       },
+       {
+        "name": "Marksman Crest",
+        "cost": 350,
+        "active": "",
+        "passive": "Successful basic attacks restore 1 health, killing a unit restores 4 health. After restoring 300 health, Evolve into Sharpshooter Crest. Deal 15 extra basic damage to minions.",
+        "stats": {"p_power": 8, "lifesteal": 3},
+        "unique-passive": ["Crest1"]
+       },
+       {
+        "name": "Warrior Crest",
+        "cost": 350,
+        "active": "",
+        "passive": "Dealing damage to an enemy hero/monster or killing an enemy unit restores 1.5% maximum health over 5 seconds. After restoring 400 health, Evolve into Champion Crest. Deal 15 extra basic damage to minions.",
+        "stats": {"p_power": 8, "health": 40},
+        "unique-passive": ["Crest1"]
+       },
+       {
+        "name": "Magician Crest",
+        "cost": 350,
+        "active": "",
+        "passive": "Dealing damage to an enemy hero/monster with an ability restores 10 mana (Once per ability), killing an enemy restores 5 mana. After restoring 350 Mana, Evolve into Wizard Crest. Deal 15 extra basic damage to minions.",
+        "stats": {"m_power": 10, "m_regen": 0.5},
+        "unique-passive": ["Crest1"]
+       },
+       {
+        "name": "Consort Crest",
+        "cost": 350,
+        "active": "",
+        "passive": "Grants a charge every 20 seconds, up to 2 charges. Your next basic attack or damaging ability will deal 10 additional magic damage and grant you 30 gold. Does not occur if no Allied hero is within 1500 units. After granting 400 gold, Evolves into Keeper Crest. Receive diminishing gold from excessive minion kills.",
+        "stats": {"m_power": 5, "m_regen": 0.5},
+        "unique-passive": ["Crest1"]
+       },
+       {
+        "name": "Guardian Crest",
+        "cost": 350,
+        "active": "",
+        "passive": "Grants a charge every 20 seconds, up to 2 charges. Your next basic attack or damaging ability will restore 20 health and grant you 30 gold. Does not occur if no Allied hero is within 1500 units. After granting 400 gold, Evolves into Warden Crest. Receive diminishing gold from excessive minion kills.",
+        "stats": {"health": 40, "h_regen": 0.5},
+        "unique-passive": ["Crest1"]
+       },
+       {
+        "name": "Titan Crest",
+        "cost": 350,
+        "active": "",
+        "passive": "After taking damage, heal 10 (+0.75% of maximum health) over 10 seconds. This healing is doubled for 5 seconds after killing an enemy unit. After restoring 400 health, Evolves into Goliath Crest. Deal 15 extra basic damage to minions.",
+        "stats": {"health": 80},
+        "unique-passive": ["Crest1"]
+       },
+       {
+        "name": "Stealth Ward",
+        "cost": 25,
+        "active": "Consume - Place an invisible ward at target location that reveals nearby Visible and Camouflagued enemy targets, lasts for 150 seconds.",
+        "passive": "",
+        "stats": ""
+       },
+       {
+        "name": "Sentry",
+        "cost": 25,
+        "active": "Consume - Reveal all wards in an 800 unit radius for 12 seconds.",
+        "passive": "",
+        "stats": ""
+       },
+       {
+        "name": "Compound Potion",
+        "cost": 50,
+        "active": "Consume - Regenerates 6 health and 3 mana per second for 15 seconds, restoring a total of 90 health and 45 mana.",
+        "passive": "",
+        "stats": ""
+       },
+       {
+        "name": "Health Potion",
+        "cost": 50,
+        "active": "Consume -  Regenerates 10 health per second for 15 seconds, restoring a total of 150 health.",
+        "passive": "",
+        "stats": ""
+       },
+       {
+        "name": "Mana Potion",
+        "cost": 50,
+        "active": "Consume - Restores 6 mana per second for 15 seconds, restoring a total of 90 mana.",
+        "passive": "",
+        "stats": ""
+       },
+       {
+        "name": "Refillable Potion",
+        "cost": 150,
+        "active": "Consume - Restores 12 health per second for 10 seconds, restoring a total of 120 health. Holds 2 charges that refill upon visiting the base.",
+        "passive": "",
+        "stats": ""
+       }
+]

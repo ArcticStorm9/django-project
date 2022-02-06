@@ -1,0 +1,84 @@
+{% extends "item_builder/base.html" %}
+{% load static %}
+{% block content %}
+	<link rel="stylesheet" href="{% static 'styles/builds.css' %}">
+	<header>
+		<h1>View Builds</h1>
+	</header>
+		<div class="setting-container" style="display:none;">
+			<div class="param-container">
+				<input id="param-title" maxlength="25" class="param-item param-title steralize" type="text" placeholder="TITLE">
+				<select id="param-hero" name="hero" class="param-item param-select">
+					<option>--Select Hero--</option>
+					{% for hero in heroes %}
+					<option>{{hero.name}}</option>
+					{% endfor %}
+				</select>
+				<select id="param-role" name="role" class="param-item param-select">
+					<option>--Select Role--</option>
+					<option>Carry</option>
+					<option>Support</option>
+					<option>Mid</option>
+					<option>Jungle</option>
+					<option>Solo</option>
+				</select>
+				<select id="param-sort" name="sort" class="param-item param-select">
+					<option>Score</option>
+					<option>Date</option>
+				</select>
+				<input id="param-submit" type="submit" value="Apply" onclick="getFilteredData()">
+			</div>
+			<div class="filter-container">
+				<div id="name" class="filter-container-item name">Build Name<img id="arrow" class="sort up" src="{% static 'styles/images/sort-solid.svg' %}"></div>
+				<div id="role" class="filter-container-item role">Role</div>
+				<div id="stats" class="filter-container-item stats">Stats</div>
+				<div id="items" class="filter-container-item items">Late Game Items</div>
+				<div id="score" class="filter-container-item score">Score</div>
+			</div>
+		</div>
+	<div class="builds-container">
+	{% for build in builds %}
+	<a href="{% url 'build-detail' build.id %}">
+		<div class="build">
+			<div class="build-name name">
+				{% with "styles/images/heroes/"|add:build.hero.img_src as hero_src %}
+				<img class="img-cover" src="{% static hero_src %}">
+				{% endwith %}
+				<div class="build-name-container">
+					<h2>{{ build.name }}</h2>
+					<h5>by {{ build.author_display_name }}</h5>
+				</div>
+			</div>
+			<div class="build-role role">
+				{% with "styles/images/roles/"|add:build.role|add:".png" as role %}
+				<img src="{% static role %}">
+				{% endwith %}
+			</div>
+			<div class="build-attr stats">STATS HERE</div>
+			<div class="build-attr items">ITEMS HERE</div>
+			<div class="build-attr score">SCORE HERE</div>
+		</div>
+	</a>
+	{% endfor %}
+	</div>
+	{% if is_paginated %}
+	<div class="pagination" style="color:white;">
+    <span class="step-links">
+      {% if page_obj.has_previous %}
+        <a class="page-link page" href="?page=1">&laquo; first</a>
+        <a class="page-link page" href="?page={{ page_obj.previous_page_number }}">previous</a>
+      {% endif %}
+
+      <span class="current page">
+        Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
+      </span>
+
+      {% if page_obj.has_next %}
+        <a class="page-link page" href="?page={{ page_obj.next_page_number }}">next</a>
+        <a class="page-link page" href="?page={{ page_obj.paginator.num_pages }}">last &raquo;</a>
+      {% endif %}
+    </span>
+	</div>
+	{% endif %}
+	<script src="{% static 'scripts/builds.js' %}"></script>
+{% endblock content %}

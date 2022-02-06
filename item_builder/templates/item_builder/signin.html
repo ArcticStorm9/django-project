@@ -1,0 +1,28 @@
+{% extends "item_builder/base.html" %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'styles/signin.css' %}">
+<!-- <div id="signin-box">
+  <div id="info">
+    <h1 style="font-family:'Roboto', sans-serif;">Sign in with Discord</h1>
+    <h3 style="font-family:'Roboto', sans-serif;">We use Discord for all of our account stuff.</h3>
+    <p style="font-family:'Roboto', sans-serif;">That way you don't have to worry about passwords.</p>
+  </div>
+  <div id="authorize-box">
+    <a href="{% url 'home-page' %}" id="cancel-button">
+      Cancel
+    </a>
+  	<a href="{{ auth_url }}">
+      <div id="authorize-button">Sign in</div>
+    </a>
+  </div>
+</div> -->
+<div class="authbox">
+    <img class="discord-logo" src="{% static 'styles/images/discord.png' %}">
+    <p class="discord-reason">We use Discord for all of our account stuff. That way you don't have to worry about passwords</p>
+    <div class="auth-buttons-container">
+      <a href="{% url 'home-page' %}"><div class="auth-button" style="background-color: var(--bad);">Cancel</div></a>
+      <a href="{{ auth_url }}"><div class="auth-button" style="background-color: var(--good);">Sign In</div></a>
+    </div>
+</div>
+{% endblock content %}

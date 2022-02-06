@@ -1,0 +1,17 @@
+{% extends "item_builder/base.html" %}
+{% load static %}
+{% block content %}
+	<title>Predecessor Loadout Builder</title>
+	<link rel="stylesheet" href="{% static 'styles/home.css' %}">
+	<h1>PRED BUILDER</h1>
+	<a href="{% url 'build-list' %}" class="action-btn">VIEW BUILDS</a>
+	<div class="widget-container">
+		<div class="widget" id="highlighted-build">
+			HIGHLIGHTED BUILD
+		</div>
+		<div class="widget" id="twitch-embed">
+			TWITCH
+		</div>
+	</div>
+	<img class="background-image" src="{% static 'styles/images/background-styled.jpg' %}">
+{% endblock content %}

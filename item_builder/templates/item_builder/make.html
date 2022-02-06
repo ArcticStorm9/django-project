@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pred Stat Calculator</title>
+    <link rel="icon" type="image/svg" href="{% static 'styles/images/template-logo.svg' %}">
+    <link rel="stylesheet" href="{% static 'styles/make.css' %}">
+</head>
+<body>
+    <div class="container">
+        <div class="current-items">CURRENT ITEMS</div>
+        <div class="all-items">
+            {% for item in items %}
+            <li class="item" onclick="addItem(&quot;{{item.name}}&quot;, &quot;{{item.active}}&quot;, &quot;{{item.passive}}&quot;, '{{item.cost}}', '{{item.stats}}', '{{item.unique_passive}}')" onmouseover="showHover(event, &quot;{{item.name}}&quot;, null, &quot;{{item.active}}&quot;, &quot;{{item.passive}}&quot;, '{{item.cost}}', null, null, '{{item.stats}}')" onmousemove="moveHover(event)" onmouseout="destroyHover()">
+                <h3>{{item.name}}</h2>
+                {% if item.active %}
+                ACTIVE
+                {% else %}
+                PASSIVE
+                {% endif %}
+                <span hidden>{{item.stats}}</span>
+            </li>
+            {% endfor %}
+        </div>
+        <div class="stats">
+            <li class="stat" onclick="handleSort('p_power')">Physical Power <span class="stat-num p_power">0</span></li>
+            <li class="stat">Magical Power <span class="stat-num m_power">0</span></li>
+            <li class="stat">Physical Armor <span class="stat-num p_armor">0</span></li>
+            <li class="stat">Magical Armor <span class="stat-num m_armor">0</span></li>
+            <li class="stat">Physical Pen. <span class="stat-num p_pen">0</span></li>
+            <li class="stat">Magical Pen. <span class="stat-num m_pen">0</span></li>
+            <li class="stat">Critical Chance <span class="stat-num c_chance">0</span></li>
+            <li class="stat">Attack Speed <span class="stat-num atk_speed">0</span></li>
+            <li class="stat">Maximum Health <span class="stat-num health">0</span></li>
+            <li class="stat">Maximum Mana <span class="stat-num mana">0</span></li>
+            <li class="stat">Health Regen <span class="stat-num h_regen">0</span></li>
+            <li class="stat">Mana Regen <span class="stat-num m_regen">0</span></li>
+            <li class="stat">Lifesteal <span class="stat-num lifesteal">0</span></li>
+            <li class="stat">Magical Lifesteal <span class="stat-num m_lifesteal">0</span></li>
+            <li class="stat">Ability Haste <span class="stat-num haste">0</span></li>
+            <li class="stat">Tenacity <span class="stat-num tenacity">0</span></li>
+            <li class="stat">Omnivamp <span class="stat-num o_vamp">0</span></li>
+            <li class="stat">Move Speed <span class="stat-num movespeed">0</span></li>
+        </div>
+        <div class="analyzer">ANALYZER</div>
+      </div>
+</body>
+<img class="background-image" src="{% static 'styles/images/background2-styled.jpg' %}">
+<script src="{% static 'scripts/make.js' %}"></script>

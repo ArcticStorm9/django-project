@@ -1,0 +1,8 @@
+
+# Elastic Beanstalk Files
+.ebextensions/*
+.ebextensions
+.elasticbeanstalk/*
+.elasticbeanstalk
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml

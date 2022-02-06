@@ -1,0 +1,61 @@
+{% extends "item_builder/base.html" %}
+{% load static %}
+{% block content %}
+	<link rel="stylesheet" href="{% static 'styles/builds_detail.css' %}">
+	<header>
+		<h1>{{object.name}} by {{object.author_display_name}}</h1>
+	</header>
+	<div id="wrapper">
+		<div class="grid-container">
+			 <div class="hero">
+				{% with "styles/images/heroes/"|add:object.hero.img_src as hero_src %}
+		 		<img class="hero-portrait" src="{% static hero_src %}">
+		 		{% endwith %}
+				{% with "styles/images/roles/"|add:object.role|add:".png" as role %}
+				<img class="role-portrait" src="{% static role %}" style="display:inline-block;float:right;">
+				{% endwith %}
+				<p style="max-width:400px;">{{object.desc}}</p>
+				<div id="stat-area">
+				</div>
+			 </div>
+			 <div class="items">
+				<h3>STARTER</h3>
+				<div id="starter-items">
+					{% for item in object.starter_items %}
+						<div class="item {{item}}" onmouseover="showHover(this, {{ item }});" onmouseout="hideHover(this);">
+						</div>
+					{% endfor %}
+				</div>
+				<h3>EARLY</h3>
+				<div id="early-items">
+					{% for item in object.early_items %}
+						<div class="item {{item}}" onmouseover="showHover(this, {{ item }});" onmouseout="hideHover(this);">
+						</div>
+					{% endfor %}
+				</div>
+				<h3>MID</h3>
+				<div id="mid-items">
+					{% for item in object.mid_items %}
+						<div class="item {{item}}" onmouseover="showHover(this, {{ item }});" onmouseout="hideHover(this);">
+						</div>
+					{% endfor %}
+				</div>
+				<h3>LATE</h3>
+				<div id="late-items">
+					{% for item in object.late_items %}
+						<div class="item {{item}}" onmouseover="showHover(this, {{ item }});" onmouseout="hideHover(this);">
+						</div>
+					{% endfor %}
+				</div>
+			 </div>
+		</div>
+	</div>
+	<script>
+		const items = {{ items|safe }}
+		const starter = {{ object.starter_items|safe }}
+		const early = {{ object.early_items|safe }}
+		const mid = {{ object.mid_items|safe }}
+		const late = {{ object.late_items|safe }}
+	</script>
+	<script src="{% static 'scripts/builds_detail.js' %}"></script>
+{% endblock content %}

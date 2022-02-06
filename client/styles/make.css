@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans');
+:root{
+  --dark: #141314;
+  --dark-highlight: #242424;
+  --white: #ffffff;
+  --white-shadow: #383838;
+  --accent: #AB85FF;
+  --old-accent: #17bfc2;
+  --gold: #FFE59E;
+  --clear: rgba(0,0,0,0);
+  --good: #2ea446;
+  --bad: #a42e2e;
+
+  --nav-height: 30px;
+  font-family: 'Josefin Sans', sans-serif;
+  color: white;
+}
+body {
+  margin: 0;
+}
+.background-image {
+  position: fixed;
+  object-fit: cover;
+  
+  width: 100%;
+  height: 100%;
+  
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+#hover {
+  width: 225px;
+  
+  padding: 12px;
+  
+  background-color: var(--dark-highlight);
+  opacity: 0.8;
+  color: white;
+}
+#hover h2 {
+  margin: 0;
+  
+  text-transform: uppercase;
+}
+.container {
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 0.3fr 2.4fr 0.3fr;
+  grid-template-rows: 275px 1.7fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". current-items ."
+    "stats all-items analyzer";
+  width: 80%;
+  height: 100%;
+}
+
+.current-items {
+  grid-area: current-items;
+
+  position: sticky;
+  top: 0;
+
+  background-color: orange;
+}
+
+.all-items {
+  grid-area: all-items;
+
+  padding-top: 10px;
+
+  background-color: rgba(0, 0, 0, 0.4);
+
+  text-align: center;
+}
+
+.stats {
+  grid-area: stats;
+
+  position: sticky;
+  top: 50px;
+  height: 600px;
+
+  background-color: purple;
+  list-style-type: none;
+}
+
+.stat {
+  margin: 0;
+}
+
+.analyzer {
+  grid-area: analyzer;
+
+  position: sticky;
+  top: 50px;
+  height: 600px;
+
+  background-color: blue;
+}
+
+.item {
+  display: inline-block;
+
+  width: 200px;
+  height: 250px;
+
+  margin: 10px;
+
+  color: var(--gold);
+  background-color: var(--dark-highlight);
+}

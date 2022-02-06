@@ -1,0 +1,178 @@
+[
+    {
+        "name": "Drongo",
+        "img_src": "drongo.png",
+        "desc": "Ranged Carry",
+        "Q": "Gas Grenade",
+        "E": "Rad Rounds",
+        "R": "Shrapnel Canon",
+        "RMB": "Boomerang",
+        "passive": "Wastelander",
+        "stats": ""
+    },
+    {
+        "name": "Feng Mao",
+        "img_src": "feng_mao.png",
+        "desc": "Melee Assassin",
+        "Q": "Safeguard",
+        "E": "Hamstring",
+        "R": "Earthshatter",
+        "RMB": "Reaping Dash",
+        "passive": "Precision Strike",
+        "stats": ""
+    },
+    {
+        "name": "Gadget",
+        "img_src": "gadget.png",
+        "desc": "Ranged Battle Mage",
+        "Q": "Sticky Mine",
+        "E": "Speed Gate",
+        "R": "Tesla Dome",
+        "RMB": "Search and Destroy",
+        "passive": "Shock Absorber",
+        "stats": ""
+    },
+    {
+        "name": "Gideon",
+        "img_src": "gideon.png",
+        "desc": "Ranged Control Mage",
+        "Q": "Cosmic Rift",
+        "E": "Torn Space",
+        "R": "Black Hole",
+        "RMB": "Void Breach",
+        "passive": "Cosmic Power",
+        "stats": ""
+    },
+    {
+        "name": "Howitzer",
+        "img_src": "howitzer.png",
+        "desc": "Ranged Artillery Mage",
+        "Q": "R2000 Rocket",
+        "E": "Landmine",
+        "R": "Make it Rain",
+        "RMB": "Slow Grenades",
+        "passive": "Armed Salvo",
+        "stats": ""
+    },
+    {
+        "name": "Kallari",
+        "img_src": "kallari.png",
+        "desc": "Melee Assassin",
+        "Q": "Shadow Walk",
+        "E": "Death Mark",
+        "R": "Guillotine",
+        "RMB": "Crippling Daggers",
+        "passive": "Shadow Dance",
+        "stats": ""
+    },
+    {
+        "name": "Khaimera",
+        "img_src": "khaimera.png",
+        "desc": "Melee Fighter",
+        "Q": "Unleash",
+        "E": "Invigorate",
+        "R": "Cull",
+        "RMB": "Ambush",
+        "passive": "Spirit Regeneration",
+        "stats": ""
+    },
+    {
+        "name": "Lt. Belica",
+        "img_src": "belica.png",
+        "desc": "Ranged Control Mage",
+        "Q": "Seismic Assault",
+        "E": "Void Drone",
+        "R": "Neural Disruptor",
+        "RMB": "Void Bomb",
+        "passive": "Innovation",
+        "stats": ""
+    },
+    {
+        "name": "Murdock",
+        "img_src": "murdock.png",
+        "desc": "Ranged Carry",
+        "Q": "Static Trap",
+        "E": "Stimpack",
+        "R": "Long Arm of the Law",
+        "RMB": "Buckshot",
+        "passive": "Shots Fired",
+        "stats": ""
+    },
+    {
+        "name": "Muriel",
+        "img_src": "muriel.png",
+        "desc": "Ranged Enchanter",
+        "Q": "Pacify",
+        "E": "Consecrated Ground",
+        "R": "Reversal of Fortune",
+        "RMB": "Alacrity",
+        "passive": "Sentinel",
+        "stats": ""
+    },
+    {
+        "name": "Narbash",
+        "img_src": "narbash.png",
+        "desc": "Melee Enchanter",
+        "Q": "March!",
+        "E": "Song of My People",
+        "R": "Crash! Bang! Boom!",
+        "RMB": "Thunk",
+        "passive": "Beat Drop",
+        "stats": ""
+    },
+    {
+        "name": "Rampage",
+        "img_src": "rampage.png",
+        "desc": "Melee Vanguard",
+        "Q": "Boulder Throw",
+        "E": "Savage Roar",
+        "R": "Behemoth",
+        "RMB": "Rumble",
+        "passive": "King of the Jungle",
+        "stats": ""
+    },
+    {
+        "name": "Sevarog",
+        "img_src": "sevarog.png",
+        "desc": "Melee Vanguard",
+        "Q": "Siphon",
+        "E": "Subjugate",
+        "R": "Colossal Blow",
+        "RMB": "Phantom Rush",
+        "passive": "Reaper of Souls",
+        "stats": ""
+    },
+    {
+        "name": "Sparrow",
+        "img_src": "sparrow.png",
+        "desc": "Ranged Carry",
+        "Q": "Hail of Arrows",
+        "E": "Heighten Senses",
+        "R": "Inner Fire",
+        "RMB": "Piercing Shot",
+        "passive": "Relentless",
+        "stats": ""
+    },
+    {
+        "name": "Steel",
+        "img_src": "steel.png",
+        "desc": "Melee Vanguard",
+        "Q": "Bullrush",
+        "E": "Force Shield",
+        "R": "Shield Slam",
+        "RMB": "Shield Bash",
+        "passive": "Battering Barrier",
+        "stats": ""
+    },
+    {
+        "name": "The Fey",
+        "img_src": "fey.png",
+        "desc": "Ranged Burst Mage",
+        "Q": "Bramble Patch",
+        "E": "Harvest Nettles",
+        "R": "Fly Trap",
+        "RMB": "Untamed Growth",
+        "passive": "Nature's Vengeance",
+        "stats": ""
+    }
+]

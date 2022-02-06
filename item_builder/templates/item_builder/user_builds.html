@@ -1,0 +1,51 @@
+{% extends "item_builder/base.html" %}
+{% load static %}
+{% block content %}
+	<link rel="stylesheet" href="{% static 'styles/builds.css' %}">
+	<header>
+		<h1>Your Builds</h1>
+	</header>
+		<div class="setting-container">
+			<div class="param-container">
+				<input id="param-title" maxlength="25" class="param-item param-title steralize" type="text" placeholder="TITLE">
+				<select id="param-hero" name="hero" class="param-item param-select"></select>
+				<select id="param-role" name="role" class="param-item param-select"></select>
+			</div>
+			<div class="filter-container">
+				<div id="name" class="filter-container-item name">Build Name<img id="arrow" class="sort up" src="{% static 'styles/images/sort-solid.svg' %}"></div>
+				<div id="role" class="filter-container-item role">Role</div>
+				<div id="stats" class="filter-container-item stats">Stats</div>
+				<div id="items" class="filter-container-item items">Late Game Items</div>
+				<div id="score" class="filter-container-item score">Score</div>
+			</div>
+		</div>
+	<div class="builds-container">
+	{% for build in builds %}
+	<a href="{% url 'build-detail' build.id %}">
+		<div class="build">
+			<div class="build-name name">
+				{% with "styles/images/heroes/"|add:build.hero.img_src as hero_src %}
+				<img class="img-cover" src="{% static hero_src %}">
+				{% endwith %}
+				<div class="build-name-container">
+					<h2>{{ build.name }}</h2>
+					<h5>by {{ build.author_name }}</h5>
+				</div>
+			</div>
+			<div class="build-role role">
+				{% with "styles/images/roles/"|add:build.role|add:".png" as role %}
+				<img src="{% static role %}">
+				{% endwith %}
+			</div>
+			<div class="build-stats stats" style="color:white;">NOT IMPLEMENTED</div>
+			<div class="build-items items"></div>
+			<div class="build-score score"></div>
+		</div>
+	</a>
+	{% endfor %}
+	</div>
+	<script>
+		var data = {heroes:{{ heroes|safe }}, items: {{ items|safe }}, builds: {{ builds|safe }}}
+	</script>
+	<script src="{% static 'scripts/builds.js' %}"></script>
+{% endblock content %}

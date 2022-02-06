@@ -1,0 +1,36 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 400px 400px 400px 400px;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "Accounts Builds Heroes Items";
+  overflow: auto;
+  list-style-type: none;
+  color: white;
+}
+.Accounts {
+  grid-area: Accounts;
+}
+.Builds {
+  grid-area: Builds;
+}
+.Heroes {
+  grid-area: Heroes;
+}
+.Items {
+  grid-area: Items;
+}
+.hoverable:hover {
+  color: #17bfc2;
+}
+.filter:hover {
+  color: #17bfc2;
+}
+h1 {
+  display: inline-block;
+}
+input {
+  display: block;
+  width: 80%;
+}

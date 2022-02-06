@@ -1,0 +1,49 @@
+body{
+    background-color: var(--dark-highlight);
+}
+
+main .authbox{
+    width: 500px;
+    height: 400px;
+
+    padding-top: 40px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 20px;
+    color: var(--dark);
+    background-color: white;
+
+}
+main .discord-logo{
+    width: 150px;
+    height: 150px;
+}
+main .discord-reason{
+    margin-top: 40px;
+    width: 80%;
+    text-align: center;
+    font-size: 1.3rem;
+}
+main .auth-buttons-container{
+    display: flex;
+    flex-direction: row;
+}
+main .auth-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 115px;
+    height: 45px;
+    border-radius: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-top: 3px;
+    font-size: 1.2rem;
+
+    color: white;
+    cursor: pointer;
+}

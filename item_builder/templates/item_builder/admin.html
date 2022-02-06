@@ -1,0 +1,81 @@
+{% extends "item_builder/base.html" %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'styles/admin.css' %}">
+<div class="grid-container">
+  <div class="Accounts">
+    <h1>Accounts</h1>
+    <span class="filter" style="display:inline-block;" onclick="filterAccountsByName()">A-Z</span>
+    <span class="filter" style="display:inline-block;" onclick="filterAccountsByPk()">#</span>
+    <div id="accounts-list"></div>
+  </div>
+  <div class="Builds">
+    <h1>Builds</h1>
+    <div id="builds-list"></div>
+  </div>
+  <div class="Heroes">
+    <h1>Heroes</h1>
+    <p onclick="showHeroCreateMenu(this)" style="text-decoration:underline;">Show creation menu</p>
+    <div id="create-hero" style="display:none;">
+      <input id="hero-name" placeholder="Hero Name" type="text">
+      <input id="hero-q" placeholder="Hero Q Ability" type="text">
+      <input id="hero-e" placeholder="Hero E Ability" type="text">
+      <input id="hero-r" placeholder="Hero Ultimate Ability" type="text">
+      <input id="hero-rmb" placeholder="Hero RMB Ability" type="text">
+      <input id="hero-passive" placeholder="Hero Passive Ability" type="text">
+      <input id="hero-stats" placeholder="Hero Stats" type="text">
+      <input id="hero-desc" placeholder="Hero Description" type="text">
+      <input id="hero-src" placeholder="Hero Image Source" type="text">
+      <input id="hero-submit" type="submit" onclick="postHero()">
+    </div>
+    <div id="edit-hero" style="display:none;">
+      <p id="edit-hero-name">Hero</p>
+      <input id="edit-hero-q" placeholder="Hero Q Ability" type="text">
+      <input id="edit-hero-e" placeholder="Hero E Ability" type="text">
+      <input id="edit-hero-r" placeholder="Hero Ultimate Ability" type="text">
+      <input id="edit-hero-rmb" placeholder="Hero RMB Ability" type="text">
+      <input id="edit-hero-passive" placeholder="Hero Passive Ability" type="text">
+      <input id="edit-hero-stats" placeholder="Hero Stats" type="text">
+      <input id="edit-hero-desc" placeholder="Hero Description" type="text">
+      <input id="edit-hero-src" placeholder="Hero Image Source" type="text">
+      <input id="edit-hero-submit" type="submit" onclick="putHero()">
+    </div>
+    <div id="heroes-list"></div>
+  </div>
+  <div class="Items" style="overflow:auto;">
+    <h1>Items</h1>
+    <span class="filter" style="display:inline-block;" onclick="filterItemsByCost()">$</span>
+    <span class="filter" style="display:inline-block;" onclick="filterItemsByName()">A-Z</span>
+    <span class="filter" style="display:inline-block;" onclick="filterItemsByPk()">#</span>
+    <p onclick="showItemCreateMenu(this)" style="text-decoration:underline;">Show creation menu</p>
+    <div id="create-item" style="display:none;">
+      <input id="item-name" placeholder="Item Name" type="text">
+      <input id="item-cost" placeholder="Item Cost" type="number">
+      <input id="item-active" placeholder="Item Active" type="text">
+      <input id="item-passive" placeholder="Item Passive" type="text">
+      <input id="item-stats" placeholder="{'stats': 0, 'here': 0}" type="text">
+      <input id="item-unique-passive" placeholder="Unique, Passive" type="text">
+      <input id="item-submit" type="submit" onclick="postItem()">
+    </div>
+    <div id="edit-item" style="display:none;">
+      <p id="item-id">id</p>
+      <input id="edit-item-name" placeholder="Item Name" type="text">
+      <input id="edit-item-cost" placeholder="Item Cost" type="number">
+      <input id="edit-item-active" placeholder="Item Active" type="text">
+      <input id="edit-item-passive" placeholder="Item Passive" type="text">
+      <input id="edit-item-stats" placeholder="{'stats': 0, 'here': 0}" type="text">
+      <input id="edit-item-unique-passive" placeholder="Unique, Passive" type="text">
+      <input id="edit-item-submit" type="submit" onclick="putItem()">
+    </div>
+    <div id="items-list"></div>
+  </div>
+</div>
+<script src="{% static 'scripts/global.js' %}"></script>
+<script>
+  var accounts = {{ accounts|safe }};
+  var builds = {{ builds|safe }};
+  var heroes = {{ heroes|safe }};
+  var items = {{ items|safe }};
+</script>
+<script src="{% static 'scripts/admin.js' %}"></script>
+{% endblock content %}

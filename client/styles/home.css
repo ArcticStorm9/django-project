@@ -1,0 +1,58 @@
+h1 {
+  margin: 0 auto;
+  margin-top: 20px;
+
+  color: var(--accent);
+  text-align: center;
+  font-weight: 400;
+  font-size: 5rem;
+  letter-spacing: 0.5rem;
+}
+.action-btn {
+  display: block;
+  width: 20rem;
+  height: 2rem;
+
+  margin: 0 auto;
+  margin-top: 3rem;
+  padding: 1rem;
+
+  background-color: var(--accent);
+  border-radius: 0.5rem;
+
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 2rem;
+
+  transition-duration: 0.25s;
+}
+.action-btn:hover {
+  width: 22rem;
+  height: 2.1rem;
+  padding-top: 1.2rem;
+
+  box-shadow: 0.5rem 0.5rem white;
+
+  transition-duration: 0.25s;
+}
+.widget-container {
+  width: 65rem;
+
+  margin: 0 auto;
+  margin-top: 5rem;
+}
+.widget-container .widget {
+  width: 480px;
+  height: 270px;
+
+  border-radius: 0.5rem;
+}
+#highlighted-build {
+  background-color: var(--white-shadow);
+  float: left;
+}
+#twitch-embed {
+  background-color: #6441a5;
+  float: right;
+}
